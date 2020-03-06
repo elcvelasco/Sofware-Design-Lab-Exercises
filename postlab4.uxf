@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>420</y>
+      <w>140</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>ATM
+--
++amount:int
+--
++login()
++logout()
++getBalance()
++deposit()
++withdraw()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>455</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>restrictedSavingsAccount
+--
++withdraw()
++resetCounter()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>539</x>
+      <y>189</y>
+      <w>168</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
++name:string
++pin:string
++balance=float
++accounts:int
+--
++makeKey()
++add()
++remove()
++get()
++computeInterest()
++getKeys()
++save()
++createBank()
++testAccount()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>539</x>
+      <y>420</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>savingsAccount
+--
++name:string
++pin:string
++balance=float
+--
++getBalance()
++getName()
++getPin()
++deposit()
++withdraw()
++computeInterest()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>469</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>469</x>
+      <y>469</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>364</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+fg=black
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>399</x>
+      <y>301</y>
+      <w>154</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+fg=black
+bg=black</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>301</y>
+      <w>140</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+fg=black
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0;180.0;170.0</additional_attributes>
+  </element>
+</diagram>
